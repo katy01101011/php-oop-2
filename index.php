@@ -39,31 +39,48 @@ require_once __DIR__ . "/database.php";
     </header>
     <main>
         <div class="container">
-            <div class="card">
-                <div class="product-details">
-                    <h2>
-                        <?php echo $crocchette->name; ?>
-                    </h2>
-                    <h3>
-                        <?php echo $crocchette->brand; ?>
-                    </h3>
-                    <small>
-                        <?php echo $crocchette->flavour; ?> flavour
-                    </small>
-                    <small>
-                        <?php echo $crocchette->weight; ?>g
-                    </small>
-                    <p>
-                        <?php echo $crocchette->description; ?>
-                    </p>
-                    <small>
-                        €<?php echo $crocchette->price; ?>
-                    </small>
-                </div>
-                <button>
-                    Add to cart
-                </button>
+            <h1>Food</h1>
+            <div class="food">
+                <?php foreach ($shop["food"] as $snack) { ?>
+                    <div class="card">
+                        <h2><?php echo $snack->name ?></h2>
+                        <h3><?php echo $snack->brand ?></h3>
+                        <small><?php echo $snack->weight ?>g</small>
+                        <small><?php echo $snack->flavour ?></small>
+                        <p><?php echo $snack->description ?></p>
+                        <small>€<?php echo $snack->price ?></small>
+                        <button>Add to cart</button>
+                    </div>
+                <?php } ?>
             </div>
+            <h1>Toys</h1>
+            <div class="food">
+                <?php foreach ($shop["toys"] as $aToy) { ?>
+                    <div class="card">
+                        <h2><?php echo $aToy->name ?></h2>
+                        <h3><?php echo $aToy->brand ?></h3>
+                        <small><?php echo $aToy->type ?>g</small>
+                        <small><?php echo $aToy->material ?></small>
+                        <p><?php echo $aToy->description ?></p>
+                        <small>€<?php echo $aToy->price ?></small>
+                        <button>Add to cart</button>
+                    </div>
+                <?php } ?>
+            </div>
+            <!-- <div class="toys">
+                <h1>Toys</h1>
+                <div class="card">
+                    <div class="product-details">
+                        <h2>
+                            Product
+                        </h2>
+                    </div>
+                    <button>
+                        Add to cart
+                    </button>
+                </div> -->
+
+        </div>
         </div>
     </main>
 

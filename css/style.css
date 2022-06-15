@@ -47,6 +47,13 @@ main {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
+}
+
+.food,
+.toys {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -60,4 +67,9 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+}
+
+.container h1 {
+    margin: 1rem;
 }
