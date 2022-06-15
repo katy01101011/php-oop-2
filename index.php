@@ -67,18 +67,20 @@ require_once __DIR__ . "/database.php";
                     </div>
                 <?php } ?>
             </div>
-            <!-- <div class="toys">
-                <h1>Toys</h1>
-                <div class="card">
-                    <div class="product-details">
-                        <h2>
-                            Product
-                        </h2>
+            <h1>Hygiene</h1>
+            <div class="food">
+                <?php foreach ($shop["hygiene"] as $product) { ?>
+                    <div class="card">
+                        <h2><?php echo $product->name ?></h2>
+                        <h3><?php echo $product->brand ?></h3>
+                        <small><?php echo $product->type ?>g</small>
+                        <small><?php echo $product->quantity ?></small>
+                        <p><?php echo $product->description ?></p>
+                        <small>€<?php echo $product->price ?></small>
+                        <button>Add to cart</button>
                     </div>
-                    <button>
-                        Add to cart
-                    </button>
-                </div> -->
+                <?php } ?>
+            </div>
 
         </div>
         </div>

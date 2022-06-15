@@ -2,8 +2,14 @@
     require_once __DIR__ . "/Product.php";
     require_once __DIR__ . "/Food.php";
     require_once __DIR__ . "/Toy.php";
+    require_once __DIR__ . "/Hygiene.php";
 
-    $shop = [];
+
+    $shop = [
+        "food" => [],
+        "toys" => [],
+        "hygiene" => [],
+    ];
 
     // Creo elementi del Food
     $crocchetteMyPet = new Food ("Crocchette", "My Pet", "Buonissime crocchette", 3.99, 1000, "Chicken");
@@ -32,6 +38,20 @@
     $shop["toys"][] = $frisbeeSinsay;
     $shop["toys"][] = $pelucheAnatra;
     $shop["toys"][] = $pallNodi;
+
+    // Creo elementi di Hygiene
+    $scioglinodi = new Hygiene("Scioglinodi", "Shiny", "Basta poco per scigliere tutti i nodi", 27.99, "250ml", "spray");
+    $orecchie = new Hygiene("Salviette detergenti per orecchie", "Friends", "Nessuna lacrima lascerà più tracce", 1.99, "30pz", "Salviette");
+    $shampoo = new Hygiene("Shampoo mela&eucalipto", "Papaya", "Meglio dello shampoo degli umani", 23.99, "250ml", "Bottle");
+    $dentifricio = new Hygiene("Gel igiene orale", "Papaya", "Ora sì che posso abbaiare senza sentirmi in imbarazzo", 12.99, "70g", "Bottle");
+    $detergenteOcchi = new Hygiene("Detergente contorno occhi", "Naturalclean", "Con questo non ci sono tracce di occhiaie", 24.99, "300ml", "Bottle");
+
+    // Pusho i prodotti dentro shop
+    $shop["hygiene"][] = $scioglinodi;
+    $shop["hygiene"][] = $orecchie;
+    $shop["hygiene"][] = $shampoo;
+    $shop["hygiene"][] = $dentifricio;
+    $shop["hygiene"][] = $detergenteOcchi;
 
     // var_dump($shop);
 ?>
