@@ -44,7 +44,7 @@
     $orecchie = new Hygiene("Salviette detergenti per orecchie", "Friends", "Nessuna lacrima lascerà più tracce", 1.99, "30pz", "Salviette");
     $shampoo = new Hygiene("Shampoo mela&eucalipto", "Papaya", "Meglio dello shampoo degli umani", 23.99, "250ml", "Bottle");
     $dentifricio = new Hygiene("Gel igiene orale", "Papaya", "Ora sì che posso abbaiare senza sentirmi in imbarazzo", 12.99, "70g", "Bottle");
-    $detergenteOcchi = new Hygiene("Detergente contorno occhi", "Naturalclean", "Con questo non ci sono tracce di occhiaie", 24.99, "300ml", "Bottle");
+    $detergenteOcchi = new Hygiene("Detergente contorno occhi", "Naturalpet", "Con questo non ci sono tracce di occhiaie", 24.99, "300ml", "Bottle");
 
     // Pusho i prodotti dentro shop
     $shop["hygiene"][] = $scioglinodi;

@@ -13,5 +13,9 @@ class Product
         $this->description = $_description;
         $this->price = $_price;
     }
+
+    // public function getInfo() {
+    //     return "$this->$name. $this->$brand. $this->$price";
+    // }
 }
 ?>
