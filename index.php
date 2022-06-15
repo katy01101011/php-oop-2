@@ -40,13 +40,19 @@ require_once __DIR__ . "/database.php";
     <main>
         <div class="container">
             <div class="card">
-                <div class="product">
+                <div class="product-details">
                     <h2>
                         <?php echo $crocchette->name; ?>
                     </h2>
                     <h3>
                         <?php echo $crocchette->brand; ?>
                     </h3>
+                    <small>
+                        <?php echo $crocchette->flavour; ?> flavour
+                    </small>
+                    <small>
+                        <?php echo $crocchette->weight; ?>g
+                    </small>
                     <p>
                         <?php echo $crocchette->description; ?>
                     </p>
